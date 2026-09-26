@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Friend the Fan — a bedtime book by Maria Kline</title>
+<meta name="description" content="A sweet, calming bedtime story for babies, toddlers, and young children (ages 0–5). Available in paperback, Kindle, and hardcover.">
+<meta property="og:title" content="My Friend the Fan">
+<meta property="og:description" content="A calming bedtime story about a child and the ceiling fan that keeps her company as she drifts off to sleep.">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://oakandfriendspublishing.com/cover.jpg">
+<meta property="og:url" content="https://oakandfriendspublishing.com/">
+<link rel="canonical" href="https://oakandfriendspublishing.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "My Friend the Fan",
+  "alternativeHeadline": "A Children's Book",
+  "author": { "@type": "Person", "name": "Maria Kline" },
+  "publisher": { "@type": "Organization", "name": "OAK and Friends Publishing" },
+  "audience": { "@type": "PeopleAudience", "suggestedMinAge": 0, "suggestedMaxAge": 5 },
+  "workExample": [
+    { "@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798996028108",
+      "offers": { "@type": "Offer", "price": "11.99", "priceCurrency": "USD" } },
+    { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9798996028115",
+      "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD" } },
+    { "@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798996028122",
+      "offers": { "@type": "Offer", "price": "19.99", "priceCurrency": "USD" } }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --night: #2B2E5C;
+    --night-deep: #1E2046;
+    --lavender: #B8B3EA;
+    --blush: #F7C9D6;
+    --milk: #FBF8FF;
+    --moon: #F6E7A9;
+    --ink: #2B2E5C;
+    --ink-soft: #5A5D86;
+    --paper: #FBF8FF;
+    --panel: #FFFFFF;
+    --line: #E4E0F5;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--night-deep);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #EDEBFF; --ink-soft: #B9B7DA; --paper: #22244C; --panel: #2B2E5C; --line: #3C3F72;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #EDEBFF; --ink-soft: #B9B7DA; --paper: #22244C; --panel: #2B2E5C; --line: #3C3F72;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    font-family: "Nunito", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--moon); outline-offset: 3px; border-radius: 6px; }
+
+  /* ---------- Hero: the ceiling ---------- */
+  .ceiling {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 60% 55% at 50% 0%, rgba(246,231,169,.22), transparent 70%),
+      var(--night);
+    color: var(--milk);
+    text-align: center;
+    padding: 0 1.25rem 4.5rem;
+  }
+  .fan {
+    width: min(78vw, 420px);
+    margin: -12% auto 0;
+    display: block;
+  }
+  .fan .blades {
+    transform-origin: 200px 200px;
+    animation: spin 9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .fan .blades { animation: none; }
+  }
+  .star { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--moon); opacity: .7; }
+
+  h1 {
+    font-family: "Young Serif", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(2.6rem, 8vw, 4.75rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 1.5rem 0 .75rem;
+  }
+  .byline { font-size: 1.15rem; color: var(--lavender); margin: 0; }
+  .tagline {
+    max-width: 32rem;
+    margin: 1.25rem auto 2rem;
+    font-size: 1.15rem;
+    color: #E7E4FB;
+  }
+  .jump {
+    display: inline-block;
+    background: var(--blush);
+    color: var(--night-deep);
+    font-weight: 800;
+    text-decoration: none;
+    padding: .85rem 1.6rem;
+    border-radius: 999px;
+  }
+  .jump:hover { background: #FAD7E1; }
+
+  /* ---------- Formats ---------- */
+  main { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+  .shelf {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: 2.5rem;
+    align-items: start;
+    padding: 4rem 0 3rem;
+  }
+  .cover {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px -18px rgba(30,32,70,.55);
+    aspect-ratio: 1 / 1;
+    background: var(--lavender);
+  }
+  .cover img { width: 100%; height: 100%; object-fit: cover; }
+  h2 {
+    font-family: "Young Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    line-height: 1.15;
+    margin: 0 0 1.25rem;
+  }
+  .formats { list-style: none; margin: 0; padding: 0; }
+  .format {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .25rem 1.5rem;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-top: 2px dotted var(--line);
+  }
+  .format:last-child { border-bottom: 2px dotted var(--line); }
+  .format h3 { margin: 0; font-size: 1.25rem; font-weight: 800; }
+  .format p { margin: 0; color: var(--ink-soft); font-size: .98rem; }
+  .price { font-family: "Young Serif", Georgia, serif; font-size: 1.35rem; }
+  .buttons { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .6rem; margin-top: .6rem; }
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: .98rem;
+    padding: .65rem 1.2rem;
+    border-radius: 999px;
+    background: var(--night);
+    color: var(--milk);
+    border: 2px solid var(--night);
+  }
+  .btn:hover { background: var(--night-deep); border-color: var(--night-deep); }
+  .btn.alt { background: transparent; color: var(--ink); border-color: var(--lavender); }
+  .btn.alt:hover { background: rgba(184,179,234,.18); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .btn { background: var(--blush); color: var(--night-deep); border-color: var(--blush); }
+  }
+  :root[data-theme="dark"] .btn { background: var(--blush); color: var(--night-deep); border-color: var(--blush); }
+
+  /* ---------- Story + author ---------- */
+  .story {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 2rem 0 3.5rem;
+  }
+  .story p { margin: 0 0 1.1rem; }
+  .story .lead {
+    font-family: "Young Serif", Georgia, serif;
+    font-size: 1.35rem;
+    line-height: 1.5;
+  }
+  .good-for {
+    background: var(--panel);
+    border-left: 6px solid var(--blush);
+    border-radius: 0 12px 12px 0;
+    padding: 1.1rem 1.4rem;
+    margin: 1.75rem 0;
+  }
+  .good-for ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+  .good-for strong { font-weight: 800; }
+
+  .author {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: 2.5rem 0 4rem;
+    border-top: 2px dotted var(--line);
+  }
+
+  footer {
+    background: var(--night-deep);
+    color: #CFCCEF;
+    text-align: center;
+    font-size: .92rem;
+    padding: 2.25rem 1.25rem calc(2.25rem + env(safe-area-inset-bottom, 0px));
+  }
+  footer p { margin: .3rem 0; }
+  footer .imprint { font-family: "Young Serif", Georgia, serif; font-size: 1.1rem; color: var(--milk); }
+  .isbns { overflow-x: auto; }
+
+  @media (max-width: 720px) {
+    .shelf { grid-template-columns: 1fr; gap: 2rem; padding-top: 3rem; }
+    .cover { max-width: 340px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="ceiling">
+  <span class="star" style="top:22%;left:9%"></span>
+  <span class="star" style="top:48%;left:16%;width:3px;height:3px"></span>
+  <span class="star" style="top:30%;right:11%"></span>
+  <span class="star" style="top:62%;right:7%;width:3px;height:3px"></span>
+  <span class="star" style="top:74%;left:6%;width:5px;height:5px"></span>
+
+  <!-- Ceiling fan, seen from the bed looking up -->
+  <svg class="fan" viewBox="0 0 400 400" role="img" aria-label="A ceiling fan turning slowly overhead">
+    <g class="blades" fill="#B8B3EA">
+      <g id="blade">
+        <path d="M200 185 C 214 150, 232 70, 214 22 C 206 4, 194 4, 186 22 C 168 70, 186 150, 200 185 Z" opacity=".95"/>
+      </g>
+      <use href="#blade" transform="rotate(72 200 200)"/>
+      <use href="#blade" transform="rotate(144 200 200)"/>
+      <use href="#blade" transform="rotate(216 200 200)"/>
+      <use href="#blade" transform="rotate(288 200 200)"/>
+    </g>
+    <circle cx="200" cy="200" r="34" fill="#F7C9D6"/>
+    <circle cx="200" cy="200" r="20" fill="#F6E7A9"/>
+  </svg>
+
+  <h1>My Friend the Fan</h1>
+  <p class="byline">A bedtime story by Maria Kline</p>
+  <p class="tagline">A little girl discovers that the fan spinning softly above her bed is a quiet, reassuring friend who stays with her until she falls asleep.</p>
+  <a class="jump" href="#get-the-book">Get the book</a>
+</header>
+
+<main>
+  <section class="shelf" id="get-the-book" aria-labelledby="formats-heading">
+    <!-- EDIT: drop your cover image next to this file as cover.jpg (square works best).
+         If the file is missing, the lavender square simply shows. -->
+    <figure class="cover">
+      <img src="cover.jpg" alt="Cover of My Friend the Fan by Maria Kline" onerror="this.remove()">
+    </figure>
+
+    <div>
+      <h2 id="formats-heading">Pick your copy</h2>
+      <ul class="formats">
+
+        <li class="format">
+          <h3>Hardcover</h3>
+          <span class="price">$19.99</span>
+          <p>Sturdy case-laminate cover with a gloss finish. Made for years of bedtimes.</p>
+          <div class="buttons">
+            <!-- EDIT: hardcover links (ISBN 979-8-9960281-2-2) -->
+            <a class="btn" href="https://www.barnesandnoble.com/s/9798996028122">Barnes &amp; Noble</a>
+            <a class="btn alt" href="https://bookshop.org/search?keywords=9798996028122">Bookshop.org</a>
+            <a class="btn alt" href="https://www.amazon.com/s?k=9798996028122">Amazon</a>
+          </div>
+        </li>
+
+        <li class="format">
+          <h3>Paperback</h3>
+          <span class="price">$11.99</span>
+          <p>8.5 × 8.5 inches, full-color pages. Easy to toss in the diaper bag.</p>
+          <div class="buttons">
+            <!-- EDIT: paperback link (ISBN 979-8-9960281-0-8) -->
+            <a class="btn" href="https://www.amazon.com/s?k=9798996028108">Amazon</a>
+          </div>
+        </li>
+
+        <li class="format">
+          <h3>Kindle</h3>
+          <span class="price">$5.99</span>
+          <p>Read it on a Kindle, tablet, or phone with the free Kindle app.</p>
+          <div class="buttons">
+            <!-- EDIT: replace with your Kindle product page, e.g. https://www.amazon.com/dp/B0XXXXXXXX -->
+            <a class="btn" href="https://www.amazon.com/s?k=My+Friend+the+Fan+Maria+Kline&amp;i=digital-text">Amazon Kindle</a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <section class="story" aria-labelledby="story-heading">
+    <h2 id="story-heading">About the story</h2>
+    <p class="lead">The ceiling fan is one of the very first things little ones love to watch. This book turns it into a friend.</p>
+    <p>As the fan spins softly above her, a young child finds it becomes more than part of the room. It's something steady and familiar that helps her feel safe as she drifts off to sleep.</p>
+    <p>Soothing, rhythmic language and dreamy pastel illustrations make it an easy read-aloud. The simple, repeating structure helps children relax and gives families a comforting nighttime routine to come back to.</p>
+    <div class="good-for">
+      <strong>A good fit for</strong>
+      <ul>
+        <li>Babies, toddlers, and young children, ages 0–5</li>
+        <li>Bedtime routines and wind-down time</li>
+        <li>Kids who love gentle, calming stories before sleep</li>
+        <li>Parents looking for a book that helps little ones settle down</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="author" aria-labelledby="author-heading">
+    <h2 id="author-heading">About the author</h2>
+    <p>Maria is an avid triathlete who enjoys spending time with her bunny, Peanut, her daughter, Olivia, and her husband, John, when she is not out running, biking or swimming. In her spare time she is also a physical therapist in Scottsdale, Arizona.</p>
+  </section>
+</main>
+
+<footer>
+  <p class="imprint">OAK and Friends Publishing</p>
+  <p class="isbns">Paperback ISBN 979-8-9960281-0-8 &nbsp;|&nbsp; Hardcover ISBN 979-8-9960281-2-2</p>
+  <p>&copy; <span id="yr">2026</span> Maria Kline. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
