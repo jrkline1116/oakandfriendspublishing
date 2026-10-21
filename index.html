@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>My Friend the Fan — a bedtime book by Maria Kline</title>
-<meta name="description" content="A sweet, calming bedtime story for babies, toddlers, and young children (ages 0–5). Available in paperback, hardcover, Kindle, and Google Play.">
+<title>My Friend the Fan by Maria Kline | OAK and Friends Publishing</title>
+<meta name="description" content="OAK and Friends Publishing presents My Friend the Fan by Maria Kline, a sweet, calming bedtime story for babies, toddlers, and young children (ages 0–5). Available in hardcover, paperback, Kindle, and Google Play.">
+<meta name="author" content="Maria Kline">
+<meta property="og:site_name" content="OAK and Friends Publishing">
 <meta property="og:title" content="My Friend the Fan">
 <meta property="og:description" content="A calming bedtime story about a child and the ceiling fan that keeps her company as she drifts off to sleep.">
 <meta property="og:type" content="book">
@@ -19,21 +21,56 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "My Friend the Fan",
-  "alternativeHeadline": "A Children's Book",
-  "author": { "@type": "Person", "name": "Maria Kline" },
-  "publisher": { "@type": "Organization", "name": "OAK and Friends Publishing" },
-  "audience": { "@type": "PeopleAudience", "suggestedMinAge": 0, "suggestedMaxAge": 5 },
-  "workExample": [
-    { "@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798996028108",
-      "offers": { "@type": "Offer", "price": "11.99", "priceCurrency": "USD" } },
-    { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9798996028115",
-      "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "url": "https://www.amazon.com/dp/B0HJNSJRMS" } },
-    { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9798996028139",
-      "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "url": "https://play.google.com/store/books/details?id=fYMREgAAQBAJ" } },
-    { "@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798996028122",
-      "offers": { "@type": "Offer", "price": "19.99", "priceCurrency": "USD", "url": "https://www.amazon.com/dp/B0HN1CPLZK" } }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://oakandfriendspublishing.com/#website",
+      "url": "https://oakandfriendspublishing.com/",
+      "name": "OAK and Friends Publishing",
+      "alternateName": ["OAK & Friends Publishing", "Oak and Friends Publishing"],
+      "publisher": { "@id": "https://oakandfriendspublishing.com/#publisher" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://oakandfriendspublishing.com/#publisher",
+      "name": "OAK and Friends Publishing",
+      "alternateName": ["OAK & Friends Publishing", "Oak and Friends Publishing"],
+      "url": "https://oakandfriendspublishing.com/",
+      "logo": "https://oakandfriendspublishing.com/cover.jpg",
+      "description": "Independent publisher of children's picture books, based in Arizona.",
+      "address": { "@type": "PostalAddress", "addressRegion": "AZ", "addressCountry": "US" }
+    },
+    {
+      "@type": "Book",
+      "@id": "https://oakandfriendspublishing.com/#book",
+      "name": "My Friend the Fan",
+      "alternativeHeadline": "A Children's Book",
+      "url": "https://oakandfriendspublishing.com/",
+      "image": "https://oakandfriendspublishing.com/cover.jpg",
+      "description": "A sweet and calming bedtime story for babies, toddlers, and young children about a little girl and the ceiling fan that keeps her company as she drifts off to sleep.",
+      "author": { "@type": "Person", "name": "Maria Kline" },
+      "publisher": { "@id": "https://oakandfriendspublishing.com/#publisher" },
+      "datePublished": "2026-05-22",
+      "inLanguage": "en",
+      "genre": ["Children's fiction", "Bedtime stories"],
+      "audience": { "@type": "PeopleAudience", "suggestedMinAge": 0, "suggestedMaxAge": 5 },
+      "sameAs": [
+        "https://www.goodreads.com/book/show/258597423-my-friend-the-fan",
+        "https://www.amazon.com/dp/B0HN1CPLZK",
+        "https://www.barnesandnoble.com/w/my-friend-the-fan-maria-kline/1151675928",
+        "https://play.google.com/store/books/details?id=fYMREgAAQBAJ"
+      ],
+      "workExample": [
+        { "@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9798996028122", "bookEdition": "Hardcover",
+          "offers": { "@type": "Offer", "price": "19.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0HN1CPLZK" } },
+        { "@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9798996028108", "bookEdition": "Paperback", "datePublished": "2026-05-22",
+          "offers": { "@type": "Offer", "price": "11.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0HJ764PNY" } },
+        { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9798996028115", "bookEdition": "Kindle",
+          "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://www.amazon.com/dp/B0HJNSJRMS" } },
+        { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9798996028139", "bookEdition": "Google Play",
+          "offers": { "@type": "Offer", "price": "5.99", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://play.google.com/store/books/details?id=fYMREgAAQBAJ" } }
+      ]
+    }
   ]
 }
 </script>
@@ -113,6 +150,7 @@
     margin: 1.5rem 0 .75rem;
   }
   .byline { font-size: 1.15rem; color: var(--lavender); margin: 0; }
+  .publisher { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--lavender); opacity: .85; margin: 0 0 .6rem; }
   .tagline {
     max-width: 32rem;
     margin: 1.25rem auto 2rem;
@@ -258,6 +296,7 @@
     <circle cx="200" cy="200" r="20" fill="#F6E7A9"/>
   </svg>
 
+  <p class="publisher">OAK and Friends Publishing presents</p>
   <h1>My Friend the Fan</h1>
   <p class="byline">A bedtime story by Maria Kline</p>
   <p class="tagline">A little girl discovers that the fan spinning softly above her bed is a quiet, reassuring friend who stays with her until she falls asleep.</p>
@@ -339,6 +378,7 @@
 
 <footer>
   <p class="imprint">OAK and Friends Publishing</p>
+  <p>An independent children's book publisher in Arizona &middot; First published May 22, 2026</p>
   <p class="isbns">Paperback ISBN 979-8-9960281-0-8 &nbsp;|&nbsp; Hardcover ISBN 979-8-9960281-2-2<br>Kindle ISBN 979-8-9960281-1-5 &nbsp;|&nbsp; Google Play ISBN 979-8-9960281-3-9</p>
   <p>&copy; <span id="yr">2026</span> Maria Kline. All rights reserved.</p>
 </footer>
